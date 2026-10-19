@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dlehmann</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="preload" href="fonts/fira-code-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Fira Code";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/fira-code-latin-400.woff2") format("woff2");
+    }
+    :root {
+      --bg: #f6f5f1;
+      --text: #1d1f21;
+      --muted: #6b6f75;
+      --accent: #2f7d5b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #121416;
+        --text: #e6e6e3;
+        --muted: #8b9096;
+        --accent: #6fcf9f;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #121416;
+      --text: #e6e6e3;
+      --muted: #8b9096;
+      --accent: #6fcf9f;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      padding: 0 16px;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 "Fira Code", ui-monospace, monospace;
+    }
+    main { max-width: 34rem; }
+    p { margin: 0 0 4px; }
+    .p { color: var(--accent); }
+    .muted { color: var(--muted); }
+    .cursor {
+      display: inline-block; width: .6em; height: 1.1em; vertical-align: -.2em;
+      background: var(--text); animation: blink 1.1s steps(1) infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+    a { color: var(--accent); text-underline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p><span class="p">$</span> ls ~/dlehmann.github.io</p>
+    <p class="muted">Move along. Nothing to see here.</p>
+    <p>&nbsp;</p>
+    <p><span class="p">$</span> open <a href="https://github.com/dlehmann">github.com/dlehmann</a></p>
+    <p><span class="p">$</span> <span class="cursor" aria-hidden="true"></span></p>
+  </main>
+  <script>console.log("The cake is a lie.");</script>
+</body>
+</html>
