@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Impressum & Datenschutz – dlehmann</title>
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="preload" href="fonts/fira-code-latin-400.woff2" as="font" type="font/woff2" crossorigin>
   <style>
@@ -60,7 +60,7 @@
 </head>
 <body>
   <main>
-    <p class="back"><span class="p">$</span> <a href="./">cd ~</a></p>
+    <p class="back"><span class="p">$</span> <a href="./" id="back">cd ..</a></p>
 
     <h1>Impressum</h1>
     <p class="muted">Angaben gemäß § 5 DDG</p>
@@ -110,5 +110,10 @@
       der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21).
       Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO).</p>
   </main>
+  <script>
+    document.getElementById("back").addEventListener("click", function (e) {
+      if (history.length > 1) { e.preventDefault(); history.back(); }
+    });
+  </script>
 </body>
 </html>
