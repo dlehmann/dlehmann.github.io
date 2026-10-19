@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum & Datenschutz – dlehmann</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="preload" href="fonts/fira-code-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Fira Code";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/fira-code-latin-400.woff2") format("woff2");
+    }
+    :root {
+      --bg: #f6f5f1;
+      --text: #1d1f21;
+      --muted: #6b6f75;
+      --accent: #2f7d5b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #121416;
+        --text: #e6e6e3;
+        --muted: #8b9096;
+        --accent: #6fcf9f;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #121416;
+      --text: #e6e6e3;
+      --muted: #8b9096;
+      --accent: #6fcf9f;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 56px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.7 "Fira Code", ui-monospace, monospace;
+    }
+    main { max-width: 40rem; margin: 0 auto; }
+    h1, h2, h3 { font-size: 1em; font-weight: 400; margin: 2em 0 .5em; }
+    h1 { margin-top: 0; }
+    h1::before, h2::before { color: var(--accent); }
+    h1::before { content: "# "; }
+    h2::before { content: "## "; }
+    h3 { color: var(--muted); }
+    p, address { margin: 0 0 1em; font-style: normal; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .back { margin-bottom: 2.5em; }
+    .p { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="back"><span class="p">$</span> <a href="./">cd ~</a></p>
+
+    <h1>Impressum</h1>
+    <p class="muted">Angaben gemäß § 5 DDG</p>
+    <address>
+      Dennis Lehmann<br>
+      c/o Autorenglück #92960<br>
+      Albert-Einstein-Straße 47<br>
+      02977 Hoyerswerda
+    </address>
+
+    <h3>Kontakt</h3>
+    <p>
+      E-Mail: <a href="mailto:mail@dennis-lehmann.de">mail@dennis-lehmann.de</a>
+    </p>
+
+    <h2>Datenschutz</h2>
+
+    <h3>Verantwortlicher</h3>
+    <p>Verantwortlich für diese Website ist Dennis Lehmann (Anschrift und Kontakt siehe Impressum).
+      Fragen zum Datenschutz richten Sie bitte an
+      <a href="mailto:mail@dennis-lehmann.de">mail@dennis-lehmann.de</a>.</p>
+
+    <h3>Hosting bei GitHub Pages</h3>
+    <p>Diese Website wird bei GitHub Pages gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street,
+      San Francisco, CA 94107, USA. Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Zugriffsdaten,
+      insbesondere Ihre IP-Adresse, und speichert sie nach eigenen Angaben aus Sicherheitsgründen in Server-Logs.
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; das berechtigte Interesse liegt in einer sicheren und stabilen
+      Bereitstellung der Website.</p>
+    <p>Dabei können Daten in die USA übermittelt werden. GitHub ist unter dem EU-US Data Privacy Framework
+      zertifiziert, für das die EU-Kommission einen Angemessenheitsbeschluss (Art. 45 DSGVO) erlassen hat. Näheres
+      steht im <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub
+      General Privacy Statement</a>.</p>
+
+    <h3>Keine Cookies, kein Tracking</h3>
+    <p>Diese Website setzt keine Cookies, verwendet keine Analyse- oder Tracking-Werkzeuge und lädt keine Inhalte von
+      fremden Servern (etwa Schriften oder Skripte). Ich selbst erhebe oder speichere keine personenbezogenen Daten.</p>
+
+    <h3>Links zu GitHub</h3>
+    <p>Links auf dieser Website führen zu github.com. Dort gelten die Datenschutzbestimmungen von GitHub.</p>
+
+    <h3>Kontakt per E-Mail</h3>
+    <p>Wenn Sie mir eine E-Mail schreiben, verarbeite ich Ihre Angaben nur, um Ihre Anfrage zu beantworten
+      (Art. 6 Abs. 1 lit. f DSGVO), und lösche sie, sobald sie dafür nicht mehr benötigt werden.</p>
+
+    <h3>Ihre Rechte</h3>
+    <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung
+      der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21).
+      Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO).</p>
+  </main>
+</body>
+</html>
